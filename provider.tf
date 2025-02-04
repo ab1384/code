@@ -16,7 +16,7 @@ provider "azurerm" {
 }
 
 # Create a resource group
-resource "azurerm_resource_group" "Andrii" {
-  name     = "Andrii_RG"
+resource "azurerm_resource_group" "rg" {
+  name     = var.rg_name
   location = "West Europe"
 }
