@@ -17,6 +17,6 @@ provider "azurerm" {
 
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
-  name     = var.rg_name
-  location = "West Europe"
+  location = var.resource_group_location
+  name     = "${random_pet.prefix.id}-rg"
 }
